@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using HelloGithubClassroom;
+using FractionClassroom;
 using System;
 
 namespace FractionTesting
@@ -97,5 +97,86 @@ namespace FractionTesting
             Assert.AreEqual(f.Numerator, 1);
             Assert.AreEqual(f.Denominator, 5);
         }
+
+        [TestMethod]
+        public void DoubleFractionAdd()
+        {
+            Fraction f = f1 + 0.1;
+            Assert.AreEqual(f.Numerator, 7);
+            Assert.AreEqual(f.Denominator, 10);
+        }
+
+        [TestMethod]
+        public void DoubleFractionSub()
+        {
+            Fraction f = f1 - 3.67;
+            Assert.AreEqual(f.Numerator, -307);
+            Assert.AreEqual(f.Denominator, 100);
+        }
+
+        [TestMethod]
+        public void DoubleFracMultiply()
+        {
+            Fraction f = f1 * 3.25;
+            Assert.AreEqual(f.Numerator, 39);
+            Assert.AreEqual(f.Denominator, 20);
+        }
+
+        [TestMethod]
+        public void DoubleFracDivide()
+        {
+            Fraction f = f1 / 2.71;
+            Assert.AreEqual(f.Numerator, 60);
+            Assert.AreEqual(f.Denominator, 271);
+        }
+
+        [TestMethod]
+
+        public void GreaterThanTest()
+        {
+            Assert.AreEqual(f1 > f2, true);
+            Assert.AreEqual(f2 > f1, false);
+        }
+
+        [TestMethod]
+        public void GreaterOrEqTest()
+        {
+            Assert.AreEqual(f1 >= f2, true);
+            Assert.AreEqual(f2 >= f1, false);
+            Assert.AreEqual(f1 >= 0.6, true);
+        }
+
+        [TestMethod]
+
+        public void LessThanTest()
+        {
+            Assert.AreEqual(f1 < f2, false);
+            Assert.AreEqual(f2 < f1, true);
+        }
+
+        [TestMethod]
+        public void LessOrEqTest()
+        {
+            Assert.AreEqual(f1 <= f2, false);
+            Assert.AreEqual(f2 <= f1, true);
+            Assert.AreEqual(f1 <= 0.6, true);
+        }
+
+        [TestMethod]
+
+        public void EqualToTest()
+        {
+            Assert.AreEqual(f1 == f2, false);
+            Assert.AreEqual(f1 == 0.6, true);
+        }
+
+        [TestMethod]
+        public void NotEqualToTest()
+        {
+            Assert.AreEqual(f1 != f2, true);
+            Assert.AreEqual(f1 != 0.6, false);
+        }
+
+
     }
 }
