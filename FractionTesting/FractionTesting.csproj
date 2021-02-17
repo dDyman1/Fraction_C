@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HelloGithubClassroom\FractionClassroom.csproj" />
+    <ProjectReference Include="..\HelloGithubClassroom\FractionNS.csproj" />
   </ItemGroup>
 
 </Project>
