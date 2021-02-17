@@ -74,9 +74,12 @@ namespace FractionNS
                 d = value;
             }
         }
+
+        //TODO: Overloading Operators
+
     }
 
-        //Overloading Operators
+
 
 
     class Program
